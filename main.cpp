@@ -39,14 +39,14 @@ int main(int argc, char* argv[]) {
 	string sender_mac_buffer;
 	string my_mac_buffer;
 
-	// 해당 이더넷 네트워크 설정 파일 생성
+	// 해당 이더넷 네트워크 파일 생성
 	strcat(mac_get_command,my_eth);
 	strcat(mac_get_command,interface_file);
 	system(mac_get_command);
 	
 	
 	
-	// 타켓 핑 명령어
+	// sender 핑 명령어
 	strcat(command,sender_ip);
 	strcat(command,ping_count);
 	system(command);
